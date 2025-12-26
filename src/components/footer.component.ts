@@ -1,11 +1,12 @@
 
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-footer',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, RouterModule],
   template: `
     <footer class="border-t border-white/5 py-12 bg-slate-950 text-sm">
       <div class="max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-8">
@@ -29,26 +30,26 @@ import { CommonModule } from '@angular/common';
         <div>
           <h4 class="font-bold text-white mb-4">Product</h4>
           <ul class="space-y-2 text-slate-500">
-            <li><a href="#" class="hover:text-white transition-colors">Features</a></li>
-            <li><a href="#" class="hover:text-white transition-colors">Pricing</a></li>
-            <li><a href="#" class="hover:text-white transition-colors">Updates</a></li>
+            <li><a routerLink="/features" class="hover:text-white transition-colors">Features</a></li>
+            <li><a routerLink="/pricing" class="hover:text-white transition-colors">Pricing</a></li>
+            <li><a routerLink="/blog" class="hover:text-white transition-colors">Updates</a></li>
           </ul>
         </div>
 
         <div>
           <h4 class="font-bold text-white mb-4">Resources</h4>
           <ul class="space-y-2 text-slate-500">
-            <li><a href="#" class="hover:text-white transition-colors">Documentation</a></li>
-            <li><a href="#" class="hover:text-white transition-colors">Guides</a></li>
-            <li><a href="#" class="hover:text-white transition-colors">Help Center</a></li>
+            <li><a routerLink="/help" class="hover:text-white transition-colors">Documentation</a></li>
+            <li><a routerLink="/help" class="hover:text-white transition-colors">Guides</a></li>
+            <li><a routerLink="/help" class="hover:text-white transition-colors">Help Center</a></li>
           </ul>
         </div>
 
         <div>
           <h4 class="font-bold text-white mb-4">Legal</h4>
           <ul class="space-y-2 text-slate-500">
-            <li><a href="#" class="hover:text-white transition-colors">Privacy</a></li>
-            <li><a href="#" class="hover:text-white transition-colors">Terms</a></li>
+            <li><a routerLink="/help" class="hover:text-white transition-colors">Privacy</a></li>
+            <li><a routerLink="/help" class="hover:text-white transition-colors">Terms</a></li>
           </ul>
         </div>
 

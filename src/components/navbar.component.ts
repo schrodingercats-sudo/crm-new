@@ -44,8 +44,8 @@ import { RouterModule } from '@angular/router';
 
           <!-- Desktop Actions -->
           <div class="hidden md:flex items-center gap-4">
-            <a href="#" class="text-[13px] font-medium text-slate-300 hover:text-white transition-colors px-2">Sign in</a>
-            <button class="bg-white text-slate-950 text-[13px] font-bold px-5 py-2 rounded-full hover:bg-slate-200 transition-all flex items-center gap-2 shadow-[0_0_15px_rgba(255,255,255,0.1)]">
+            <a routerLink="/pricing" class="text-[13px] font-medium text-slate-300 hover:text-white transition-colors px-2">Sign in</a>
+            <button routerLink="/pricing" class="bg-white text-slate-950 text-[13px] font-bold px-5 py-2 rounded-full hover:bg-slate-200 transition-all flex items-center gap-2 shadow-[0_0_15px_rgba(255,255,255,0.1)]">
               <span>Get Started</span>
             </button>
           </div>
@@ -84,10 +84,10 @@ import { RouterModule } from '@angular/router';
           <a routerLink="/pricing" (click)="toggleMenu()" class="text-xl font-medium text-slate-300 hover:text-white py-3 border-b border-white/5 transition-colors">Pricing</a>
           <a routerLink="/blog" (click)="toggleMenu()" class="text-xl font-medium text-slate-300 hover:text-white py-3 border-b border-white/5 transition-colors">Blog</a>
           <a routerLink="/help" (click)="toggleMenu()" class="text-xl font-medium text-slate-300 hover:text-white py-3 border-b border-white/5 transition-colors">Help Center</a>
-          <a href="#" class="text-xl font-medium text-slate-300 hover:text-white py-3">Sign in</a>
+          <a routerLink="/pricing" (click)="toggleMenu()" class="text-xl font-medium text-slate-300 hover:text-white py-3">Sign in</a>
         </div>
         <div class="mt-auto mb-10">
-           <button class="w-full bg-white text-slate-950 text-base font-bold px-4 py-4 rounded-full hover:bg-slate-200 transition-all flex items-center justify-center gap-2">
+           <button routerLink="/pricing" (click)="toggleMenu()" class="w-full bg-white text-slate-950 text-base font-bold px-4 py-4 rounded-full hover:bg-slate-200 transition-all flex items-center justify-center gap-2">
             <span>Get Started</span>
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <path d="M5 12h14"></path>
