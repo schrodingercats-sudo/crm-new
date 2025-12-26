@@ -1,0 +1,19 @@
+
+<div class="min-h-screen bg-slate-950 text-slate-50 selection:bg-indigo-500/30 selection:text-indigo-200 relative">
+  
+  <!-- Top Fade/Blur Overlay -->
+  <div class="fixed top-0 left-0 right-0 h-32 z-40 pointer-events-none">
+      <!-- Gradient Fade -->
+      <div class="absolute inset-0 bg-gradient-to-b from-slate-950 via-slate-950/80 to-transparent"></div>
+      <!-- Backdrop Blur (Stronger at top) -->
+      <div class="absolute inset-0 backdrop-blur-[2px] mask-image-b-transparent"></div>
+  </div>
+
+  <app-navbar></app-navbar>
+  
+  <main>
+    <router-outlet></router-outlet>
+  </main>
+  
+  <app-footer></app-footer>
+</div>
