@@ -9,6 +9,7 @@ import { FeaturesPageComponent } from './src/pages/features.component';
 import { PricingPageComponent } from './src/pages/pricing.component';
 import { BlogPageComponent } from './src/pages/blog.component';
 import { HelpCenterComponent } from './src/pages/help-center.component';
+import { SignupComponent } from './src/pages/signup.component';
 
 const routes = [
   { path: '', component: HomeComponent },
@@ -16,6 +17,7 @@ const routes = [
   { path: 'pricing', component: PricingPageComponent },
   { path: 'blog', component: BlogPageComponent },
   { path: 'help', component: HelpCenterComponent },
+  { path: 'signup', component: SignupComponent },
 ];
 
 bootstrapApplication(AppComponent, {

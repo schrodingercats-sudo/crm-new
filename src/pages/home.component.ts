@@ -6,12 +6,14 @@ import { FeaturesComponent } from '../components/features.component';
 import { TaskManagementComponent } from '../components/task-management.component';
 import { AnalyticsComponent } from '../components/analytics.component';
 import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-home',
   standalone: true,
   imports: [
     CommonModule,
+    RouterModule,
     HeroComponent,
     TrustedByComponent,
     FeaturesComponent,
@@ -239,8 +241,8 @@ import { CommonModule } from '@angular/common';
             <li class="flex items-start gap-3 text-sm text-slate-300"><span class="text-white mt-1">✓</span> Dedicated support when you need it</li>
         </ul>
         <div class="flex gap-4 mb-16">
-            <button class="bg-white text-slate-950 font-bold px-6 py-3 rounded-full text-sm">Get started now</button>
-            <button class="bg-[#111] text-white border border-white/10 font-bold px-6 py-3 rounded-full text-sm flex items-center gap-2">Book a demo -></button>
+            <button routerLink="/pricing" class="bg-white text-slate-950 font-bold px-6 py-3 rounded-full text-sm">Get started now</button>
+            <button routerLink="/help" class="bg-[#111] text-white border border-white/10 font-bold px-6 py-3 rounded-full text-sm flex items-center gap-2">Book a demo -></button>
         </div>
 
         <!-- Mobile Testimonials Grid -->
@@ -350,7 +352,7 @@ import { CommonModule } from '@angular/common';
                </div>
         </div>
         
-        <button class="bg-white text-slate-950 px-6 py-3 rounded-full font-bold text-sm w-full mb-16 flex items-center justify-center gap-2">
+        <button routerLink="/help" class="bg-white text-slate-950 px-6 py-3 rounded-full font-bold text-sm w-full mb-16 flex items-center justify-center gap-2">
             Book a free demo call <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
         </button>
         
@@ -401,7 +403,7 @@ import { CommonModule } from '@angular/common';
             </div>
          </div>
          <div class="relative z-10 w-full md:w-auto">
-             <button class="w-full md:w-auto bg-white text-slate-950 font-bold px-6 py-3 rounded-full hover:bg-slate-200 transition-colors flex items-center justify-center gap-2 whitespace-nowrap">
+             <button routerLink="/help" class="w-full md:w-auto bg-white text-slate-950 font-bold px-6 py-3 rounded-full hover:bg-slate-200 transition-colors flex items-center justify-center gap-2 whitespace-nowrap">
                 Book a free demo call
                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
              </button>
